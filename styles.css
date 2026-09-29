@@ -1,3 +1,4 @@
+
 :root{
     --accent-color: #d52c3a;
     --primary-color: #1b1c1f;
@@ -50,6 +51,7 @@ header h2 {
     text-transform: uppercase;
     font-weight: 300;
 }
+
 header p {
     color: var(--secondary-text-color);
 }
@@ -87,7 +89,7 @@ header .read-more:hover {
     display: flex;
     justify-content: center;
     gap: 50px;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
 .skill-container {
@@ -108,6 +110,7 @@ header .read-more:hover {
     margin: 10px 0;
     list-style: none;
 }
+
 .skill-container ul li {
     padding: 15px;
     display: flex;
@@ -126,8 +129,84 @@ header .read-more:hover {
     flex-shrink: 0;
 }
 
+#education-section {
+    padding: 80px 20px 120px;
+    background-color: var(--primary-color);
+}
+
+#education-section h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.education-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    border-left: 5px solid var(--accent-color);
+}
+
+.education-logo {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+}
+
+.education-info {
+    flex: 1;
+}
+
+.education-info h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.degree {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.graduation,
+.gpa {
+    color: var(--secondary-text-color);
+    margin-bottom: 8px;
+}
+
+.coursework {
+    margin-top: 25px;
+}
+
+.coursework h4 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.coursework ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+}
+
+.coursework li {
+    background-color: var(--secondary-color);
+    border: 1px solid #292a2d;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 0.85rem;
+}
+
 #projects-section {
     padding: 100px;
+    background-color: var(--secondary-color);
 }
 
 #projects-section h2 {
@@ -140,7 +219,7 @@ details {
     margin: 20px auto;
     width: 1000px;
     max-width: 100%;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     border-radius: 6px;
 }
 
@@ -149,7 +228,7 @@ details summary {
     align-items: center;
     cursor: pointer;
     gap: 30px;
-    pad: 20px;
+    padding: 20px;
 }
 
 details .number {
@@ -172,6 +251,7 @@ details .text-container {
     padding: 30px;
     padding-top: 0;
 }
+
 details .project-link {
     display: inline-block;
     margin-top: 30px;
@@ -188,57 +268,42 @@ details .project-link {
 footer {
     margin-top: 80px;
     padding: 45px 20px 25px;
-
-    background-color: var(--secondary-color);
-
+    background-color: var(--primary-color);
     text-align: center;
-
     border-top: 1px solid #292a2d;
 }
 
 footer h3 {
     margin-bottom: 22px;
-
     color: var(--text-color);
-
     font-size: 1.2rem;
     font-weight: 400;
-
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-
-
-/* Social links */
 
 .footer-links {
     display: flex;
     justify-content: center;
     align-items: center;
-
     gap: 18px;
 }
 
 .footer-links a {
     width: 50px;
     height: 50px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     background-color: var(--primary-color);
-
     border: 1px solid #292a2d;
     border-radius: 50%;
-
     transition: 200ms ease;
 }
 
 .footer-links a:hover {
     background-color: var(--accent-color);
     border-color: var(--accent-color);
-
     transform: translateY(-4px);
 }
 
@@ -255,8 +320,6 @@ footer h3 {
 
 footer > p {
     margin-top: 25px;
-
     color: var(--secondary-text-color);
-
     font-size: 0.8rem;
 }
