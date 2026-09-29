@@ -25,20 +25,30 @@ body {
 }
 
 header {
-    padding: 0 20px;
     display: flex;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap-reverse;
-}
-
-header .container {
-    width: 850px;
-    max-width: 100%;
+    gap: 60px;
+    padding: 60px 8%;
 }
 
 header img {
-    height: 70vh;
+    width: 35%;
+    max-width: 420px;
+    height: 520px;
+    object-fit: cover;
+    object-position: center 25%;
+    border-radius: 20px;
+    flex-shrink: 0;
 }
+
+header .container {
+    flex: 1;
+    max-width: 650px;
+}
+
+
+
 
 header h1 {
     margin-top: 200px;
@@ -65,6 +75,7 @@ header .read-more {
     border-radius: 1000px;
     padding: 0.5em 1.25em;
     text-decoration: none;
+    margin-top: 25px;
     margin-bottom: 80px;
     transition: 200ms ease;
     cursor: pointer;
